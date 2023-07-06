@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+.whole-nav {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+* {
+    font-family: 'Manrope';
+    font-style: normal;
+}
+
+
+.nav-hover:hover {
+    color: red;
+    transform: scale(1.1);
+    transition: all linear .2s;
+}
+
+.approval {
+    margin-left: 250px;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.box-container .box {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 30px;
+    border: .1rem solidrgba(0, 0, 0, 0.2);
+    box-shadow: lightblue 1px 1px 2px 2px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+}
+
+.box:hover {
+    transform: scale(1.06);
+}
+
+.box img {
+    height: 28rem;
+    margin: 1rem 0;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.box h6:hover {
+    transform: scale(1.04);
+}
+
+.box .stars {
+    padding: 1rem 0;
+}
+
+.box .stars i {
+    font-size: 1.7rem;
+    color: #ff9f43;
+}
+
+.box span {
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead th {
+    background-color: #f2f9ff;
+    text-align: left;
+    padding: 8px;
+    color: #333;
+}
+
+.table tbody td {
+    padding: 8px;
+    color: #555;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #eaf6ff;
+}
+
+@media screen and (max-width: 600px) {
+    .table thead {
+        display: none;
+    }
+
+    .table tbody tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+    }
+
+    .table tbody td {
+        display: block;
+        text-align: right;
+        padding: 8px;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table tbody td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 8px;
+        font-weight: bold;
+    }
+}
+
+.head {
+    background-color: lightblue;
+    height: 50px;
+}

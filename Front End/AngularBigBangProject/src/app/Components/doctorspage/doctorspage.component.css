@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+.whole-nav {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+* {
+    font-family: 'Manrope';
+    font-style: normal;
+}
+
+
+.nav-hover:hover {
+    color: red;
+    transform: scale(1.1);
+    transition: all linear .2s;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+
+.box-container {
+    /* margin-left: 200px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.box-container .box {
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 30px;
+    border: .1rem solidrgba(0, 0, 0, 0.2);
+    box-shadow: lightblue 2px 1px 1px 3px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    width: 600px;
+
+}
+
+.box:hover {
+    transform: scale(1.06);
+}
+
+.box img {
+    height: 28rem;
+    margin: 1rem 0;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.box h6:hover {
+    transform: scale(1.04);
+}
+
+.box .stars {
+    padding: 1rem 0;
+}
+
+
+.box span {
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 18px;
+}
+
+
+.head
+{
+    background-color: lightblue;
+    height: 50px;
+}

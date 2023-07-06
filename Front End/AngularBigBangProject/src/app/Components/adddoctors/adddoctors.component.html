@@ -1,0 +1,58 @@
+<body>
+  <div class="whole-nav">
+
+    <div class="leftlogo">
+      <img src="../../../assets/hospital-final-logo.png" [routerLink]="['']" height="70px" width="110px"
+        alt="">&nbsp;<span style="font-size: 20px;font-weight: bolder;margin-top: 20px;" [routerLink]="['']"><span
+          style="color: blue;font-size: 18px;">H</span>eaven
+        Life</span>
+    </div>
+    <div class="right-top" style="margin-top: 20px;">
+      <div>
+
+        <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"><span
+            style="color: blue;font-size: 18px;">H</span>ome</span>&nbsp;&nbsp;
+        <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"><span
+            style="color: blue;font-size: 18px;">A</span>bout</span>&nbsp;&nbsp;
+        <!-- <span class="nav-hover" style="font-size: 16px;font-weight: bolder;"><span style="color: blue;">S</span>ERVICES</span>&nbsp;&nbsp; -->
+        <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"><span
+            style="color: blue;font-size: 18px;">F</span>aq</span>&nbsp;&nbsp;
+        <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;" [routerLink]="['']"><span
+            style="color: blue;font-size: 18px;">L</span>ogout</span>
+      </div>
+    </div>
+
+  </div>
+
+  <app-sidenav></app-sidenav>
+
+  <h2 style="margin-bottom: 30px;margin-left: 640px;font-weight: bold;">ADD DOCTORS</h2>
+  <div class="dialog-box" id="popup">
+    <!-- <i class="fa-solid fa-xmark fa-lg"></i> -->
+    <div class="form-wrapper">
+      <div class="form-container">
+
+        <form [formGroup]="AddForm">
+          <label for="name">Doctor Name</label>
+          <input type="text" id="name" name="name" placeholder="Doctor name.." formControlName="name" required />
+
+          <label for="name">Sex</label>
+          <input type="text" id="sex" name="name" placeholder="Male/Female" formControlName="sex" required />
+
+          <label for="phone">Specialization</label>
+          <input type="text" id="specialization" name="price" placeholder="Cardio" formControlName="specialization"
+            required />
+
+          <label for="phone">Experience</label>
+          <input type="text" id="specialization" name="price" placeholder="In Years" formControlName="experience"
+            required />
+          <label for="name">Phone Number</label>
+          <input type="number" id="checkin" name="checkin" placeholder="0123456789" formControlName="phoneNumber"
+            required />
+
+          <input type="submit" value="Submit" (click)="Add()" />
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

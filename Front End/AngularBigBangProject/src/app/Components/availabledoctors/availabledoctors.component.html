@@ -1,0 +1,76 @@
+<body>
+<div class="whole">
+<div class="whole-nav">
+
+    <div class="leftlogo">
+        <img src="../../../assets/hospital-final-logo.png" height="70px" width="110px" alt="">&nbsp;<span
+            style="font-size: 20px;margin-top: 20px;font-weight: bold;"><span style="color: blue;cursor: pointer;"
+                [routerLink]="['']">H</span>eaven
+            Life</span>
+    </div>
+    <div class="right-top" style="margin-top: 20px;">
+        <div>
+            <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"><span
+                    style="color: blue;font-size: 18px;">H</span>ome</span>&nbsp;&nbsp;
+            <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"><span
+                    style="color: blue;font-size: 18px;">A</span>bout</span>&nbsp;&nbsp;
+            <!-- <span class="nav-hover" style="font-size: 16px;font-weight: bolder;"><span style="color: blue;">S</span>ERVICES</span>&nbsp;&nbsp; -->
+            <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"><span
+                    style="color: blue;font-size: 18px;">F</span>aq</span>&nbsp;&nbsp;
+            <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"
+                [routerLink]="['']" (click)="logout()"><span style="color: blue;font-size: 18px;">L</span>ogout</span>
+        </div>
+    </div>
+</div>
+
+<app-sidenav></app-sidenav>
+<div class="heads">
+<h4 style="display: flex;justify-content: center;font-weight: bold;">AVAILABLE DOCTORS</h4>
+</div>
+<div class="product mt-4">
+    <br>
+    <div class="containers">
+        <div class="box-container">
+            <ng-container *ngFor="let doctor of DDoctors">
+                <div class="box">
+                    <img src="../../../assets/{{doctor.name}}.jpeg" class="card-img" style="height: 150px;width: 150px;" alt="...">
+                    <p >Name : {{doctor.name}}</p>
+                    <p >Specialization : {{doctor.specialization}}</p>
+                    <p >Experience : {{doctor.experience}}</p> 
+                </div>
+            </ng-container>
+        </div>
+    </div>
+    <br><br>
+</div>
+
+
+<div class="approval">
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialization</th>
+                <th>Experience</th>
+                <th>Phone Number</th>
+                <th>Option</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let doctor of DDoctors">
+                <td data-label="Doctor Name">{{doctor.name}}</td>
+                <td data-label="Specialization">{{doctor.specialization}}</td>
+                <td data-label="Experience">{{doctor.experience}}</td>
+                <td data-label="Phone Number">{{doctor.phoneNumber}}</td>
+                <td data-label="Option" class="button-cell"><button (click)="del(doctor)" style="color: black;">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+
+</div>
+</body>

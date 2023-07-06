@@ -1,0 +1,68 @@
+<body>
+    <div class="whole-nav">
+
+        <div class="leftlogo">
+            <img src="../../../assets/hospital-final-logo.png" height="70px" width="110px" alt="">&nbsp;<span
+                style="font-size: 20px;font-weight: bolder;margin-top: 20px;" [routerLink]="['']"><span
+                    style="color: blue;">H</span>eaven
+                Life</span>
+        </div>
+        <div class="right-top" style="margin-top: 20px;">
+            <div>
+                <span class="nav-hover" style="font-size: 16px;font-weight:900;" [routerLink]="['']"><span
+                        style="color: blue;font-size: 18px;font-size: 18px;">H</span>ome</span>&nbsp;&nbsp;
+                <span class="nav-hover" style="font-size: 16px;font-weight:900;"><span
+                        style="color: blue;font-size: 18px;font-size: 18px;">A</span>bout</span>&nbsp;&nbsp;
+                <span class="nav-hover" style="font-size: 16px;font-weight:900;"><span
+                        style="color: blue;font-size: 18px;font-size: 18px;">F</span>aq</span>&nbsp;&nbsp;
+                <span class="nav-hover" style="font-size: 16px;font-weight:900;" [routerLink]="['']"(click)="logout()"><span
+                        style="color: blue;font-size: 18px;font-size: 18px;">L</span>ogout</span>
+            </div>
+        </div>
+
+    </div>
+
+    <app-sidenav></app-sidenav>
+    <div class="heads">
+        <h4 style="display: flex;justify-content: center;font-weight: bold;">APPOINTMENT DETAILS</h4>
+    </div>
+    <div class="product mt-4">
+        <br>
+        <div class="containers" style="margin-left: 200px;">
+            <div class="box-container">
+                <ng-container *ngFor="let doctor of DDoctors">
+                    <div class="box">
+                        <p>Name : {{doctor.patientName}}</p>
+                        <p>UserName : {{doctor.sex}}</p>
+                        <p>Visit Date : {{doctor.date}}</p>
+
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+
+
+    <div class="approval">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Sex</th>
+                    <th>Date</th>
+                    <th>Doctor ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let doctor of DDoctors">
+                    <td data-label="Patient Name">{{doctor.patientName}}</td>
+                    <td data-label="Sex">{{doctor.sex}}</td>
+                    <td data-label="Date">{{doctor.date}}</td>
+                    <td data-label="Doctor ID">{{doctor.doctorId}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>

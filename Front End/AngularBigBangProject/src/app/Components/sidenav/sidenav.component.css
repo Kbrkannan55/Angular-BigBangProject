@@ -1,0 +1,17 @@
+.whole-nav{
+    background-color: lightblue;
+    width: 170px;
+    height: 1550px;
+    /* font-family: ui-sans-serif; */
+    /* font-weight: bold; */
+    color: black;
+    border-radius: 5px;
+    position: absolute;
+    border-right: solid lightblue 3px;
+    border-bottom: solid lightblue 2px;
+}
+
+
+.nav1{
+    margin-top: 30px;
+}

@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+.top-flex1 {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#service:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.words1 {
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 55px 20px 55px 15px;
+    font-style: italic;
+    margin-left: 20px;
+    font-size: 40px;
+    width: 50%;
+    background-color: rgb(94, 94, 241);
+    color: white;
+}
+
+.words2 {
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 24px;
+    width: 50%;
+}
+
+#blog {
+    text-align: justify;
+}
+
+.top-doctor {
+    margin-top: 10px;
+    background-image: url(../../../assets/Top-doctors.jpg);
+    height: 700px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-below {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg1 {
+    background: url(../../../assets/advantages.jpg) no-repeat;
+    height: 500px;
+    width: 950px;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.advantage {
+    margin-left: 150px;
+    margin-top: 150px;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+
+.side-call {
+    position: relative;
+    margin-top: -63px;
+    float: right;
+    background-color: rgb(18, 101, 129);
+    color: white;
+    border-radius: 10px 1px 10px 10px;
+    text-align: center;
+    width: 350px;
+}
+
+
+.bg2 {
+    background-image: url(../../../assets/Top-doctors2.jpg);
+    height: 700px;
+    width: 900px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.top-doctor2 {
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.words1:hover {
+    background-color: black;
+    color: red;
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+
+.solution {
+
+    font-weight: bolder;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 200px;
+    background-color: rgb(155, 242, 242);
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+    align-items: center;
+    border-radius: 60px 10px 15px 60px;
+}
+
+.appointment {
+    font-style: italic;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 300px;
+}
+
+.ending-card1 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.ending-card2 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 18%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+h6 {
+    margin-top: 10px;
+}
+
+.box-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.box-container .box {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 30px;
+    border: .1rem solidrgba(0, 0, 0, 0.2);
+    box-shadow: lightblue 0 2px 2px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.box:hover {
+    transform: scale(1.06);
+}
+
+.box img {
+    height: 28rem;
+    margin: 1rem 0;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.box h6:hover {
+    transform: scale(1.04);
+}
+
+.box .stars {
+    padding: 1rem 0;
+}
+
+.box .stars i {
+    font-size: 1.7rem;
+    color: #ff9f43;
+}
+
+.box span {
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 18px;
+}
+
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: lightblue;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: red;
+    color: white;
+}
+
+:root {
+    --bg-primary: #0e1a60;
+    --color-primary: #0e1a60;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+section,
+.container {
+    position: relative;
+}
+
+.lead {
+    font-weight: 500;
+}
+
+
+/*Header*/
+
+header {
+    background: var(--bg-primary);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link {
+    /* color: #FFF; */
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 24px;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.nav-link {
+    color: #000;
+}
+
+
+
+/*Hero Banner*/
+
+.hero-banner {
+    background: url(../../../assets/Doctor-Top.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 200px 0px;
+    height: 800px;
+    position: relative;
+}
+
+.hero-banner:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* background: rgb(5 38 111 / 91%); */
+}
+
+.banner-text-wrap h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 8px 24px;
+    border-radius: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-white {
+    background: #FFF;
+    color: var(--color-primary);
+}
+
+.banner-text-wrap {
+    max-width: 600px;
+}
+
+.banner-text-wrap p {
+    margin-bottom: 23px;
+    margin-top: 15px;
+}
+
+
+/*Features Section*/
+section.features-section {
+    margin-top: -90px;
+}
+
+.bg1 {
+    background: #10285f;
+}
+
+.bg2 {
+    background: #0c2f7d;
+}
+
+.bg3 {
+    background: #1148c3;
+}
+
+.features-box h3,
+.features-box p {
+    color: #FFF;
+}
+
+.features-box {
+    padding: 40px;
+}
+
+
+
+/*About Section*/
+
+section.about-section {
+    padding: 100px 0px;
+}
+
+.btn-primary {
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
+}
+
+.about-media {
+    border: 10px solid var(--color-primary);
+}
+
+
+
+/*Services Section*/
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+section.services-section {
+    padding: 100px 0px 50px;
+    background: lightgray;
+}
+
+.services-box {
+    background: #FFF;
+    padding: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.services-box h3 {
+    margin: 15px 0px 20px;
+}
+
+
+
+/*reviews Section*/
+
+.reviews-section {
+    background: url(../../../assets/Top-doctors2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.review-media {
+    width: 100%;
+}
+
+.review-media img {
+    width: 100px !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+}
+
+.bg-overlay:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+}
+
+.reviews-section {
+    padding: 100px 0px;
+}
+
+.reviews-section h2 {
+    color: #FFF;
+    text-align: center;
+}
+
+.review-box {
+    color: #FFF;
+    text-align: center;
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+.review-box p {
+    font-size: 18px;
+    margin: 26px 0px 26px;
+}
+
+.review-box h4 {
+    text-transform: uppercase;
+}
+
+.review-box h5 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+/*team Section*/
+
+section.team-section {
+    padding: 100px 0px;
+}
+
+/* .team-box {} */
+
+.team-info {
+    text-align: center;
+}
+
+.team-info h3 {
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+
+ul.team-social li {
+    display: inline-block;
+}
+
+ul.team-social li a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--color-primary);
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    color: var(--color-primary);
+}
+
+
+
+
+
+/*Booking Section*/
+
+
+.booking-section {
+    background: url(../../../assets/Top-doctors.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+}
+
+.form-control {
+    border-radius: 0;
+    height: 60px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 224px !important;
+}
+
+.form-col h4 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form-col h3 {
+    font-size: 36px;
+    color: #FFF;
+    margin: 7px 0px 50px;
+}
+
+
+/*Blog Section*/
+
+section.blog-section {
+    padding: 100px 0px;
+}
+
+.blog-info h3 a {
+    color: #000;
+}
+
+ul.meta li {
+    display: inline-block;
+}
+
+.blog-info p {
+    margin-top: 20px;
+}
+
+.blog-media {
+    margin-bottom: 17px;
+}
+
+.blog-box {
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .11);
+}
+
+
+/*Footer */
+
+footer {
+    background: var(--bg-primary);
+    padding: 100px 0px;
+    color: #FFF;
+}
+
+ul.footer-address li i {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 22px;
+}
+
+ul.footer-address li {
+    position: relative;
+    padding-left: 35px;
+}
+
+ul.footer-address li a {
+    color: #FFF;
+}
+
+.footer-widget h3 {
+    margin-bottom: 30px;
+}
+
+ul.footer-menu li a {
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.end1{
+    background-image: url(../../../assets/Ending-Doctor1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+}
+
+
+
+.end2{
+    background-image: url(../../../assets/Ending-Doctor2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+
+.end3{
+    background-image: url(../../../assets/Ending-Doctor3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+}
+
+
+
+@media (min-width:992px) and (max-width:1400px) {
+
+    header .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 10px 11px;
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+@media (max-width:991px) {
+    .navbar-toggler-icon {
+        background: black;
+        padding: 20px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+
+    .nav-item{
+        color: white;
+    }
+
+    .reviews-section {
+        padding: 40px 0px;
+    }
+
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .review-box p {
+        font-size: 15px;
+    }
+
+    .banner-text-wrap h1 {
+        font-size: 39px;
+    }
+
+    .team-box {
+        margin-bottom: 40px;
+    }
+
+    .hero-banner {
+        padding: 137px 0px;
+        min-height: auto;
+    }
+
+    .booking-section {
+        padding: 40px 0px;
+    }
+
+    footer {
+        padding: 40px 10px;
+    }
+
+    section.blog-section {
+        padding: 40px 0px;
+    }
+
+    section.team-section {
+        padding: 30px 0px;
+    }
+
+
+
+    section.services-section {
+        padding: 30px 0px;
+    }
+
+    .services-box {
+        margin-bottom: 20px;
+    }
+
+    .about-media {
+        margin-bottom: 30px;
+    }
+
+    .features-box {
+        margin-bottom: 30px;
+    }
+
+    section.about-section {
+        padding: 30px 0px 40px;
+    }
+
+
+
+}

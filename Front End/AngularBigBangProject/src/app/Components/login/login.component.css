@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope';
+    font-style: normal;
+
+}
+
+.form-container {
+display: flex;
+justify-content: center;
+    margin: 0 auto;
+    /* margin-left: 570px; */
+    height: 90vh;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.form {
+    margin-top: 50px;
+    width: 400px;
+    height: 330px;
+    padding: 20px;
+    display: table;
+    border-right: solid blue 3px;
+    border-radius: 25px;
+    border-bottom: solid blue 3px;
+    box-shadow: 1px 1px 2px 2px;
+    z-index: 5;
+}
+
+.login {
+    margin-top: 100px;
+}
+
+.signup {
+    margin-top: 30px
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.input-container {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.input {
+    background-color: #303245;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 14px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px;
+    width: 100%;
+}
+
+
+
+button {
+    border: 0;
+    background-color: blue;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    color: rgb(131 10 97);
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.msg {
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+
+.error {
+    color: rgb(216, 5, 5);
+}
+
+.success {
+    color: rgb(0, 54, 0);
+}
+
+.light {
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    color: black;
+}
+
+.link:hover {
+    color: red;
+}

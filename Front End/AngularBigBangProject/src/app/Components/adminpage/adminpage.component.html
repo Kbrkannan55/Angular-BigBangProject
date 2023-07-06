@@ -1,0 +1,71 @@
+<body>
+    <div class="whole-nav">
+
+        <div class="leftlogo">
+            <img src="../../../assets/hospital-final-logo.png" [routerLink]="['']" height="70px" width="110px"
+                alt="">&nbsp;<span style="font-size: 20px;font-weight: bolder;margin-top: 20px;cursor: pointer;"
+                [routerLink]="['']"><span style="color: blue;">H</span>eaven
+                Life</span>
+        </div>
+        <div class="right-top" style="margin-top: 20px;">
+            <div>
+                <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"
+                    [routerLink]="['']"><span style="color: blue;font-size: 18px;">H</span>ome</span>&nbsp;&nbsp;
+                <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"><span
+                        style="color: blue;font-size: 18px;">A</span>bout</span>&nbsp;&nbsp;
+                <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"><span
+                        style="color: blue;font-size: 18px;">F</span>aq</span>&nbsp;&nbsp;
+                <span class="nav-hover" style="font-size: 16px;cursor: pointer;font-weight:900;"
+                    [routerLink]="['']" (click)="logout()"><span style="color: blue;font-size: 18px;">L</span>ogout</span>
+            </div>
+        </div>
+    </div>
+    <app-sidenav></app-sidenav>
+
+    <div class="heads">
+        <h4 style="display: flex;justify-content: center;font-weight: bold;">APPROVAL LIST FOR DOCTORS</h4>
+    </div>
+    <div class="approval">
+        <div class="product mt-4">
+            <br>
+            <div class="containers">
+                <div class="box-container">
+                    <ng-container *ngFor="let doctor of DDoctors">
+                        <div class="box">
+                            <p>Name : {{doctor.name}}</p>
+                            <p>UserName : {{doctor.username}}</p>
+                            <p>Roles : {{doctor.roles}}</p>
+                            <p>Email : {{doctor.email}}</p>
+                            <p><button (click)="Add(doctor)"
+                                    style="background-color: green;color: white;">Approve</button></p>
+                            <p><button (click)="del(doctor)"
+                                    style="background-color: red;color: white;">Decline</button></p>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+            <br><br>
+        </div>
+
+        <table class="table" style="margin-top: 40px;">
+            <thead>
+                <tr>
+                    <th>Doctor Name</th>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let doctor of DDoctors">
+                    <td>{{doctor.name}}</td>
+                    <td>{{doctor.username}}</td>
+                    <td>{{doctor.roles}}</td>
+                    <td>{{doctor.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+</body>
